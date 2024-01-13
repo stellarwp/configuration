@@ -1,0 +1,27 @@
+{
+  "name": "stellarwp/configuration",
+  "type": "library",
+  "description": "StellarWP Configuration Accessor",
+  "keywords": [
+    "psr-11",
+    "environment",
+    "config",
+    "configuration"
+  ],
+  "homepage": "https://github.com/stellarwp/configuraiton",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "StellarWP",
+      "homepage": "https://stellarwp.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "StellarWP\\Configuration\\": "src/Configuration"
+    }
+  }
+}
