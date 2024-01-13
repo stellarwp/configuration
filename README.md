@@ -2,7 +2,7 @@
 
 Provides a system-wide set of configuration values. Easily access feature flags, and other immutable configurations.
 
-Inspired by systems that load configurations from various sources, like retrieving `conf.ini` or `.env` values.
+Inspired by systems that load configurations from various sources, like retrieving `.ini` or `.env` values.
 
 ## Setup
 
@@ -36,7 +36,8 @@ class Constants_Provider implements Configuration_Provider_Interface {
 class Provider {
 	protected function register(): void {
 		// Can add other loaders with other configuration values, such as local vs prod configurations.
-		tribe( Configuration_Loader::class )->add( new Constants_Provider() )
+		$loader = ( new Configuration_Loader() )->add( new Constants_Provider() );
+		$this->configuration = new Configuration( $loader );
 	}
 }
 ```
@@ -51,9 +52,9 @@ define('TEC_FEATURE_FLAG', true);
 ```
 ```php
 // Model.php
-public function tec_magic() {
+public function config_magic() {
 	// Feature enabled?
-	if ( tribe( Configuration::class )->get( 'TEC_FEATURE_FLAG' ) ) {
+	if ( $this->configuration->get( 'TEC_FEATURE_FLAG' ) ) {
 		// do stuff...
 	}
 }
