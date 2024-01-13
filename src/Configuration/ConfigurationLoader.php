@@ -2,7 +2,7 @@
 /**
  * Handles loading configuration services.
  *
- * @since 5.1.3
+ * @since 1.0.0
  *
  * @package TEC\Common\Configuration;
  */
@@ -14,7 +14,7 @@ use StellarWP\Configuration\Provider\ConfigurationProviderInterface;
 /**
  * Class ConfigurationLoader.
  *
- * @since 5.1.3
+ * @since 1.0.0
  *
  * @package TEC\Common\Configuration;
  */
@@ -28,7 +28,7 @@ class ConfigurationLoader {
 	 * Add a var provider to the list of providers referenced when accessing a variable
 	 * from within the Configuration object.
 	 *
-	 * @since 5.1.3
+	 * @since 1.0.0
 	 *
 	 * @param ConfigurationProviderInterface $provider
 	 *
@@ -46,7 +46,7 @@ class ConfigurationLoader {
 	/**
 	 * Retrieve a list of all ConfigurationProviderInterface providers loaded.
 	 *
-	 * @since 5.1.3
+	 * @since 1.0.0
 	 *
 	 * @return ConfigurationProviderInterface[]
 	 */
@@ -57,7 +57,7 @@ class ConfigurationLoader {
 	/**
 	 * Remove the providers.
 	 *
-	 * @since 5.1.3
+	 * @since 1.0.0
 	 *
 	 * @return $this
 	 */

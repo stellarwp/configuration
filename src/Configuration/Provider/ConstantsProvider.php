@@ -2,7 +2,7 @@
 /**
  * Provides a constants value for the ConfigurationLoader.
  *
- * @since 5.1.3
+ * @since 1.0.0
  *
  * @package TEC\Common\Configuration;
  */
@@ -12,7 +12,7 @@ namespace StellarWP\Configuration\Provider;
 /**
  * Class ConstantsProvider.
  *
- * @since 5.1.3
+ * @since 1.0.0
  *
  * @package TEC\Common\Configuration;
  */

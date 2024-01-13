@@ -2,7 +2,7 @@
 /**
  * Handles loading feature flags and other configuration values.
  *
- * @since 5.1.3
+ * @since 1.0.0
  *
  * @package TEC\Common\Configuration;
  */
@@ -14,7 +14,7 @@ use StellarWP\Configuration\Provider\ConfigurationProviderInterface;
 /**
  * Class Configuration.
  *
- * @since 5.1.3
+ * @since 1.0.0
  *
  * @package TEC\Common\Configuration;
  */
@@ -22,7 +22,7 @@ class Configuration implements ConfigurationProviderInterface {
 	/**
 	 * The Configuration loader.
 	 *
-	 * @since 5.1.3
+	 * @since 1.0.0
 	 *
 	 * @var ConfigurationLoader The loader.
 	 */
@@ -31,7 +31,7 @@ class Configuration implements ConfigurationProviderInterface {
 	/**
 	 * The configuration service.
 	 *
-	 * @since 5.1.3
+	 * @since 1.0.0
 	 *
 	 * @param ConfigurationLoader $loader
 	 */
